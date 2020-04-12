@@ -15,11 +15,8 @@
     $_SESSION['user'] = $user; 
 
     $db = new \Oracle\Db("Verifica Chefia","infra");
-    $sql ="select REGISTRO,MAIL,LOTACAO,CARGOCONF from infra.view_ad_sisrhu where samaccountname = "."'".$user."'";
+    $sql ="select LOTACAO,CARGOCONF from infra.view_ad_sisrhu where samaccountname = "."'".$user."'";
     $res = $db->execFetchArray($sql, "Consulta");
-    
-    $_SESSION['matricula'] = $res["REGISTRO"];#Matricula a partir do usuario autenticado
-    $_SESSION['mailchefe'] = $res["MAIL"];#E-mail a partir do usuario autenticado
     
     If (($res["CARGOCONF"] <> 0) or ($res["LOTACAO"] == 'DDPE-7C') or ($res["LOTACAO"] == 'CDPE-7G')){
         $_SESSION['vc'] = true;

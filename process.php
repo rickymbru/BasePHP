@@ -8,7 +8,6 @@
     if (empty($_POST)){
         echo "<script>alert('Formulário não preenchido');top.location.href='form.php';</script>";
     }
-
  
     $nomecompleto=$_POST['nome'];
     $usuario=$_POST['usuario'];
@@ -25,6 +24,8 @@
     $nomecompleto = padronizanome($nomecompleto);
     $arrnomecompleto = split_name($nomecompleto);
 
+    enviaEmail($email,$manager);
+
     $nomecompleto = doublequotes($nomecompleto);
     $usuario = doublequotes($usuario);
     $email = doublequotes($email);
@@ -35,4 +36,5 @@
     $comando =  escapeshellcmd('python scripts/app.py '.$nomecompleto.' '.$usuario.' '.$email.' '.$manager.' '.$nome.' '.$sobrenome);
     $output = shell_exec($comando);
     echo "<script>alert('Processo concluido, verifique se a conta ".$email." foi criada corretamente');top.location.href='form.php';</script>";
+    
 ?>
