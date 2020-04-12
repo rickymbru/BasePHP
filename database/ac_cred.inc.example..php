@@ -8,7 +8,7 @@
 /**
  * DB user name
  */
-define('SCHEMA', 'infra');
+define('SCHEMA', 'foo');
  
 /**
  * DB Password.
@@ -16,12 +16,12 @@ define('SCHEMA', 'infra');
  * Note: In practice keep database credentials out of directories
  * accessible to the web server.
  */
-define('PASSWORD', '***REMOVED***');
+define('PASSWORD', 'welcome');
  
 /**
  * DB connection identifier
  */
-define('DATABASE', '***REMOVED***');
+define('DATABASE', 'localhost/XE');
  
 /**
  * DB character set for returned data

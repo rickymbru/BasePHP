@@ -31,4 +31,10 @@
         return( substr( $aux, $ind, 13 ));
     }
 
+    function doublequotes($string){
+        $string = "\"".$string."\"";
+        
+        return $string;
+    }    
+
 ?>

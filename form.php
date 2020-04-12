@@ -3,7 +3,7 @@
 
     session_start(); 
     If (!$_SESSION['vc']){
-        echo "<script>alert('Acesso não autorizado');top.location.href='/';</script>";
+        echo "<script>top.location.href='auth.php';</script>";
     }
 ?>
 
@@ -48,35 +48,35 @@
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>
-                            <td><h1>Nome Completo</td>	
+                            <td><h1>Login da conta Institucional</td>	
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
-                            <td height="12"><input type="text" maxlength="60" name="nome" id="nome" size="60" value=""/></td>
+                            <td height="12"><input type="text" maxlength="60" name="usuario" id="usuario" size="60" placeholder="garagem" required/></td>
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>
-                            <td><h1>usuário</td>	
+                            <td><h1>Login do Gerente</td>	
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
-                            <td height="12"><input type="text" maxlength="60" name="usuario" id="usuario" size="60" value=""/></td>
+                            <td height="12"><input type="text" maxlength="60" name="manager" id="manager" size="60" placeholder="ricardobritto" required/></td>
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>
-                            <td><h1>email</td>	
+                            <td><h1>Nome Completo da conta Institucional</td>	
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
-                            <td height="12"><input type="email" maxlength="60" name="email" id="email" size="60" value=""/></td>
+                            <td height="12"><input type="text" maxlength="60" name="nome" id="nome" size="60" placeholder="Garagem da CEDAE"/></td>
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>
-                            <td><h1>Gerente</td>	
+                            <td><h1>E-mail da conta Institucional</td>	
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
-                            <td height="12"><input type="text" maxlength="60" name="manager" id="manager" size="60" value=""/></td>
+                            <td height="12"><input type="email" maxlength="60" name="email" id="email" size="60" placeholder="garagem@cedae.com.br"/></td>
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>
