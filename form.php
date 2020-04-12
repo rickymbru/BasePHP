@@ -52,15 +52,26 @@
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
-                            <td height="12"><input type="text" maxlength="60" name="usuario" id="usuario" size="60" placeholder="garagem" required/></td>
+                            <td height="12"><input type="text" maxlength="60" name="usuario" id="usuario" size="60" placeholder="garagem" required></td>
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>
-                            <td><h1>Login do Gerente</td>	
+                            <td><h1>Login do Gerente</td>
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
-                            <td height="12"><input type="text" maxlength="60" name="manager" id="manager" size="60" placeholder="ricardobritto" required/></td>
+                            <td>
+                                <select class="inputbox" name="manager" id="manager">
+                                    <option value="">---selecione---</option>
+
+                                    <?php
+                                        $gestores = retornaGestores();
+                                        foreach ($gestores as $row) {
+                                                printf("<option value=".$row['SAMACCOUNTNAME'].">".$row['NAME']."</option>\n");
+                                        }
+                                    ?>
+                                </select>
+                            </td>
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>
@@ -68,7 +79,7 @@
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
-                            <td height="12"><input type="text" maxlength="60" name="nome" id="nome" size="60" placeholder="Garagem da CEDAE"/></td>
+                            <td height="12"><input type="text" maxlength="60" name="nome" id="nome" size="60" placeholder="Garagem da CEDAE"></td>
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>
@@ -76,7 +87,7 @@
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
-                            <td height="12"><input type="email" maxlength="60" name="email" id="email" size="60" placeholder="garagem@cedae.com.br"/></td>
+                            <td height="12"><input type="email" maxlength="60" name="email" id="email" size="60" placeholder="garagem@cedae.com.br"></td>
                         </tr>
                         <tr><td><br><br></td></tr>
                         <tr>

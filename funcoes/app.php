@@ -1,4 +1,6 @@
 <?PHP
+    require('database/ac_db.inc.php');
+
      function cabecalho() {
         $ano = date('Y');
         $mes = rtrim(strtolower(nomemes(date('m'))));
@@ -49,6 +51,14 @@
         $last_name = $arrname[1];
         $first_name = $arrname[0];
         return array($first_name, $last_name);
+    }
+
+    function retornaGestores() {
+        $db = new \Oracle\Db("Lista Usuários","infra");
+        $sql ="select NAME,SAMACCOUNTNAME from infra.view_ad_sisrhu where cargoconf <> 0 order by 1";
+        $res = $db->execFetchAll($sql, "Consulta");
+
+        return $res;
     }
 
 ?>

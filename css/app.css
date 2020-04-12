@@ -167,7 +167,7 @@ input {
 	font-size: 9px;
 } 
 
-select { 
+/* select { 
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 9px;
 	color: #3D5E00;
@@ -176,7 +176,7 @@ select {
 	border: 1px solid #7ABC00;
 	margin: 0px;
 	padding: 0px;
-}
+} */
 
 /*=============================================*/
 /* DIVs de layout do Site                      */
