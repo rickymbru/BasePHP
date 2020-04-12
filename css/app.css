@@ -1,0 +1,1856 @@
+/*=============================================*/
+/* Arquivo: cssCPAEwebLayoutPagina.css         */
+/* Data de Criacao: 02-06-2008                 */
+/* Data da versão Atual: 06-10-2009            */
+/* Autor: Wagner Ribeiro de M. Silva           */
+/* E-mail: wagner.rms@cedae.rj.gov.br          */
+/* Autor: Eduardo Carvalho                     */
+/* E-mail: eduardocarvalho@cedae.rj.gov.br     */
+/* Autor: Luciano Maia                         */
+/* E-mail: lucianomaia@cedae.rj.gov.br         */
+/* Objetivo: Padronizar o layout geral do Site */
+/*=============================================*/
+
+/*=============================================*/
+/* Estilos de Tags HTML                        */
+/*=============================================*/
+
+body{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	line-height: 1.166;
+	padding: 0px;
+	background-attachment: fixed;
+	background-image: url(/images/Fundo_Degrade_Azul.jpg);
+	text-align: center;
+	margin-top: 6px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+/*===== Estilos para Tag "a" de "hyperlink" e "anchor" =====*/
+
+a {
+	cursor:pointer;
+}
+
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #005FA9;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/* ===== Estilos para expansão/ocultamento =====*/
+
+.expandir{
+  background-image: url(/PublicaIMG/expandir.gif);
+  background-position: right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.ocultar{
+  background-image: url(/PublicaIMG/ocultar.gif);
+  background-position: right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* ===== Estilos para Tag "img" das imagens gerais =====*/
+
+img {
+	border: 0px;
+	display: block;
+}
+
+
+/*===== Estilos para Tags "h1, h2, h3..." gerais =====*/
+
+h1{
+	font: bold 120% Verdana, Arial, Helvetica, sans-serif;
+	color: #334d55;
+	margin: 0px;
+	padding: 0px;
+}
+
+h2{
+	font: bold 114% Verdana, Arial, Helvetica, sans-serif;
+	color: #006699;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3{
+	font: bold 100% Verdana, Arial, Helvetica, sans-serif;
+	color: #334d55;
+	margin: 0px;
+	padding: 0px;
+}
+
+h4{
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	margin: 0px;
+	padding: 0px;
+}
+
+h5{
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	color: #334d55;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*===== Estilo para Tag "ul" de listas gerais =====*/
+
+ul{
+	list-style-type: square;
+}
+
+ul ul{
+	list-style-type: disc;
+}
+
+ul ul ul{
+	list-style-type: none;
+}
+
+
+/*===== Estilos da Tag "form, label, imput" gerais =====*/
+
+form {
+	margin: 0;
+}
+
+label{
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+}
+				
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+.button {
+  color: #FAFFF0;
+  background-color: #3D5E00;
+	border-width: 2px;
+	border-color: #7ABC00;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+.button_search {
+  color: #FAFFF0;
+  background-color: #3D5E00;
+	border-width: 1px;
+	border-color: #7ABC00;
+	height: 16px;
+	width:22px;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+} 
+
+select { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #3D5E00;
+	background-color: #FAFFF0;
+	height: 16px;
+	border: 1px solid #7ABC00;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*=============================================*/
+/* DIVs de layout do Site                      */
+/*=============================================*/
+
+/*===== pagecelll (Abrange tudo e centraliza o layout) =====*/
+
+#pagecell1{
+	/*position:relative;*/
+	width: 990px;
+	background-color: #ffffff;
+	text-align: left;
+	padding: 0px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+/*===== topheadCurve (moldura curva superior) ====*/
+
+#topheadCurve {
+	position:relative;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*===== masterhead (Cabecalho da Pagina) =====*/
+
+#masthead{
+	position:relative;
+	margin: 0px;
+	height: 80px;
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}
+
+/*===== #navBar (Area a Esquerda que contem Pesquisa, Navegação, Dicas, etc) =====*/
+
+#navBar{
+	padding: 0px;
+	width: 190px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+/*===== #littleBannerNav (Area a Esquerda que contem miniBanner CAC, PRECE, etc) =====*/
+
+#littleBannerNav{
+	/* Contida em #navBar */
+	width:170px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+
+/*===== pageNav (Barra de Navegacao, a Esquerda) =====*/
+
+#pageNav{
+	/* Contida em #navBar */
+	width:170px;
+	padding: 0px;
+	background-color: #DFFEA5;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 9px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #7BBA01;
+	border-right-color: #7BBA01;
+	border-bottom-color: #7BBA01;
+	border-left-color: #7BBA01;
+}
+
+/*===== #pageSearch (Area da 'Pesquisa no Site') =====*/
+
+#pageSearch{
+	/* Contida em #navBar */
+	width:170px;
+	/*background-color: #F8FAFC;
+	border: 1px solid #C0D6E9;*/
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	/*background-color: #FBFBFB;
+	border: 1px solid #CCCCCC;*/
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	
+}
+
+#pageSearch input{
+	font-size: 70%;
+	margin: 0px;
+	vertical-align: bottom;
+}
+ 
+#pageSearch a:link, #search a:visited {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+#pageSearch a:hover{
+	margin: 0px;
+}
+
+/*===== #pageSuggestions (Area do Formulario de Sugestoes) =====*/
+
+#pageSuggestions{
+	/* Contida em #navBar */
+	width:170px;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 9px;
+	background-color: #FBFBFB;
+	border: 1px solid #CCCCCC;
+}
+
+#pageSuggestions input{
+	font-size: 70%;
+	margin: 0px;
+	vertical-align: bottom;
+}
+ 
+#pageSuggestions a:link, #search a:visited {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+#pageSuggestions a:hover{
+	margin: 0px;
+}
+
+/*===== #pageTips (Area de 'Dicas para Usuarios') =====*/
+
+#pageTips{
+	/* Contida em #navBar */
+	width:170px;
+	padding: 0px;
+	background-color: #F8FAFC;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 9px;
+	border: 1px solid #C0D6E9;
+}
+
+/*=============================*/
+/*     AREAS DE CONTEUDO       */
+/*=============================*/
+
+/*===== #content_Login (Area a direita que contem Ferramentas de Registro de Usuarios: Login, altera dados, etc) =====*/
+
+#content_Login{
+	float:right;
+	font-size: 10px;
+	color: #000000;
+	line-height: 1.3;
+	width: 550px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+	text-align: right;
+}
+
+#content_Login input{
+	font-size: 10px;
+	margin: 0px;
+	vertical-align: bottom;
+}
+ 
+#content_Login a:link, #search a:visited {
+	font-size: 10px;
+	/*font-weight: bold;*/
+}
+
+#content_Login a:hover{
+	margin: 0px;
+}
+
+/*===== #content_Login_Big (Versao para preencher toda Area de Conteudo) =====*/
+
+#content_Login_Big{
+	font-size: 80%;
+	color: #000000;
+	line-height: 1.3;
+	text-align: right;
+	position:relative;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-top: 1px; /* Faz borda do ".contentPanel_Login_Big" aparecer no Internet Explorer */
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#content_Login_Big input{
+	font-size: 80%;
+	margin: 0px;
+	vertical-align: bottom;
+}
+ 
+#content_Login_Big a:link, #search a:visited {
+	font-size: 70%;
+	font-weight: bold;
+}
+
+#content_Login_Big a:hover{
+	margin: 0px;
+}
+
+
+/*===== #content_Date_Big (Caixa que vai conter Data e Hora) =====*/
+
+#content_Date_Big{
+	font-size: 80%;
+	color: #000000;
+	line-height: 1.3;
+	text-align: right;
+	position:relative;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	padding-top: 10px; /* Faz borda do ".contentPanel_Date_Big" aparecer no Internet Explorer */
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+/*===== #content_Id_Section (Area de identificacao da SECAO em que se esta navegando =====*/
+/* Versao para meia pagina (COM Menu) */
+#content_Id_Section{
+	float:right;
+	color: #000000;
+	font-size: 10px;
+	text-align: right;
+	line-height: 1.3;
+	width: 190px;
+	margin-top: 0;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+#content_Id_Section h1{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #004782;
+	text-align: right;
+	margin-right: 2px;
+}
+
+/*===== #content_Id_Section_Big (Area de identificacao da SECAO em que se esta navegando =====*/
+/* Versao de Pagina Inteira (SEM Menu) */
+#content_Id_Section_Big{
+	font-size: 80%;
+	color: #000000;
+	line-height: 1.3;
+	text-align: right;
+	height: 20px;
+	position:relative;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 4px;
+	margin-left: 10px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+#content_Id_Section_Big h1{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #004782;
+	text-align: right;
+	margin-right: 2px;
+}
+
+/*===== #content_A e B (Areas a direita que contem o Miolo de Conteudo do Site) =====*/
+
+#content_A{
+	float:left;
+	font-size: 85%;
+	color: #000000;
+	line-height: 1.3;
+	width: 790px;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+#content_B{
+	float:left;
+	font-size: 85%;
+	color: #000000;
+	line-height: 1.3;
+	width: 790px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+#iframe_RSS{
+	border-style:solid;
+	border-width:0.5px;
+	border-color:#218321;
+	float: left;
+	
+	line-height: 1.3;
+	width: 787px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0;
+}
+
+#body_RSS{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align:left;
+	background-image : none;
+	background-color : #eff0ef;
+	color: #115311;
+	padding: 3px;;
+   
+}
+
+#div_title_RSS{
+  position: fixed;
+  top:0;
+  left:0;
+  padding: 0;
+  margin: 0;
+  width:100%;
+}
+
+#body_RSS h2{
+    font-size: 12px;
+    background-color : #115311 ;
+	color: #efefef ;
+	vertical-align: middle;
+}
+#body_RSS a{
+	text-decoration: none;
+   
+    font-weight:bold;    
+	color: #107510 ;
+	vertical-align: middle;
+}
+#body_RSS h2 a{
+	text-decoration: none;
+    font-size: 14px;
+    
+	color: #efffef ;
+	vertical-align: middle;
+}
+#body_RSS h3 {
+	text-decoration: none;
+    font-size: 11px;
+    background-color:#efffef ;
+	color: #10b310 ; 
+	vertical-align: middle;
+}
+#iframe_RSS a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #10b310;
+}
+
+/*--------- FIM - ÁREA DEDICADA A APRESENTAÇÃO DE NOTÍCIAS EXTERNAS COM GOOGLE ALERT ----------------*/
+
+#content_Big{
+	font-size: 85%;
+	color: #000000;
+	line-height: 1.3;
+	
+	margin-top: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+#content_AllBanner{
+	padding: 0px;
+	width: 540px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+}
+
+/*=============================================*/
+/* DIVs de Componentes                         */
+/*=============================================*/
+
+/*===== #breadCrumb (Estilos para a Barra de Localizacao, 'migalha de pao') =====*/
+
+#breadCrumb{
+	color: #82ADCE;
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	text-align: left;
+	position:relative;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	padding-top: 5px; /* Faz borda do ".contentPanel_Date_Big" aparecer no Internet Explorer */
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+
+}
+
+#breadCrumb a{
+	color: #669CC4;
+}
+
+#breadCrumb a:hover{
+	color: #3F77A0;
+	text-decoration: underline;
+}
+
+#breadCrumb label{
+	font-family: Verdana, sans-serif;
+	font-size: 95%;
+	color: #5B95BF;
+	font-weight: bold;
+}
+
+/*===== .sectionLinks (Menu de Navegacao Lateral) =====*/
+/* Contida em #pageNav */
+
+#sectionLinks{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#sectionLinks h3{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #EAFFEA;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7BBA01;
+	padding-top: 7px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	font-size: 120%;
+	background-color: #65A800;
+	font-weight: bold;
+}
+
+#sectionLinks a:link, #sectionLinks a:visited {
+	display: block;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	color: #0055A4;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #DFFEA5;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #88D101;
+	/*border-top-color: #ffffff; da 3d nos botoes*/	
+}
+
+#sectionLinks a:hover{
+	font-weight: bold;
+	text-decoration: none;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCFF6F;
+	background-color: #CCFF6F;
+	background-image: none;
+}
+
+
+/*===== .siteInfo (Rodape do Site) =====*/
+
+#siteInfo{
+	clear: both;
+	font-size: small;
+	color: #0055A4;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-image: url(/images/rodape_v3.gif);
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 10px 10px 10px 10px;
+	height: 15px;
+}
+
+#siteInfoSpace{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 0px;
+	height: 10px;
+}
+/*=============================================*/
+/* Classes de Estilos para Componentes         */
+/*=============================================*/
+
+/*===== hide (Pular o Menu - para Acessibilidade) =====*/
+.hide {
+	display: none;
+}
+
+/* -------------- PAINEL da Area de MiniBanner CAC, PRECE, etc. ------------------*/
+.littleBanner{
+	width: 170px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+/*===== .contentPanel (Estrutura do Conteudo COM menu) =====*/
+/* Contida em #content */
+
+/* -------------- PAINEL da Area de Data e Hora ------------------*/
+.contentPanel_Date_Big{
+	background-color: #FBFBFB;
+	border: 1px solid #CCCCCC;
+	vertical-align: top;
+	padding: 4px;
+	margin: 0px;
+}
+
+.contentPanel_Date_TextareaClock{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #4686B5;
+	background-color: #F0F9FF;
+	height: 16px;
+	border: 1px solid #B3CDE1;
+	margin: 0px;
+	padding-top: 2px;
+	padding-right: 1px;
+	padding-bottom: 0px;
+	padding-left: 1px;
+}
+
+/* -------------- PAINEL da Area de LOGIN ------------------*/
+.contentPanel_Login{
+	background-color: #FBFBFB;
+	border: 1px solid #CCCCCC;
+	vertical-align: top;
+	padding: 4px;
+	width: 540px;
+	float: left;
+	margin: 0px;
+}
+
+.contentPanel_Banner{	
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;	
+	
+}
+
+/* -------------- INICIO - PAINEL DE MENSAGENS ----------------*/
+
+.paragrafoBanner{
+    text-indent:20; 
+    text-align: justify;
+		font-family:Verdana;
+		font-size:10;
+}        
+
+.contentPanel_Login_Message{
+	background-color: #FFFFE1;
+	border: 1px solid #FFCC33;
+	vertical-align: top;
+	padding: 4px;
+	width: 780px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+
+/*===== INICIO - PAINEL DE MENSAGENS - Mini-paineis de chamada =====*/
+.contentPanel_Login_Message_container{	
+	vertical-align: top;
+	padding: 0px;
+	width: 550px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentPanel_Login_Message_board_Left_RED{
+	vertical-align: top;
+	padding: 0px;
+	width: 270px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-attachment: scroll;
+	background-image: url(/images/aviso_vermelho_Fundo.gif);
+	height: 87px;
+	background-repeat: no-repeat;
+}
+
+.contentPanel_Login_Message_board_Right_RED{
+	vertical-align: top;
+	padding: 0px;
+	width: 270px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-attachment: scroll;
+	background-image: url(/images/aviso_vermelho_Fundo.gif);
+	height: 87px;
+	background-repeat: no-repeat;
+}
+
+.contentPanel_Login_Message_board_Left_ORANGE{
+	vertical-align: top;
+	padding: 0px;
+	width: 270px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-attachment: scroll;
+	background-image: url(/images/aviso_laranja_Fundo.gif);
+	height: 87px;
+	background-repeat: no-repeat;
+}
+
+.contentPanel_Login_Message_board_Right_ORANGE{
+	vertical-align: top;
+	padding: 0px;
+	width: 270px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-attachment: scroll;
+	background-image: url(/images/aviso_laranja_Fundo.gif);
+	height: 87px;
+	background-repeat: no-repeat;
+}
+
+.contentPanel_Login_Message_board_Left_YELOW{
+	vertical-align: top;
+	padding: 0px;
+	width: 270px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-attachment: scroll;
+	background-image: url(/images/aviso_amarelo_Fundo.gif);
+	height: 87px;
+	background-repeat: no-repeat;
+}
+
+.contentPanel_Login_Message_board_Right_YELOW{
+	vertical-align: top;
+	padding: 0px;
+	width: 270px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-attachment: scroll;
+	background-image: url(/images/aviso_amarelo_Fundo.gif);
+	height: 87px;
+	background-repeat: no-repeat;
+}
+
+.contentPanel_Login_Message_board_Left_GREEN{
+	vertical-align: top;
+	padding: 0px;
+	width: 270px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-attachment: scroll;
+	background-image: url(/images/aviso_verde_Fundo.gif);
+	height: 87px;
+	background-repeat: no-repeat;
+}
+
+.contentPanel_Login_Message_board_Right_GREEN{
+	vertical-align: top;
+	padding: 0px;
+	width: 270px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	background-attachment: scroll;
+	background-image: url(/images/aviso_verde_Fundo.gif);
+	height: 87px;
+	background-repeat: no-repeat;
+}
+
+.contentPanel_Login_Message_board_NEWS{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2E2E2E;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	margin-left: 11px;
+	line-height: 16px;
+}
+
+.contentPanel_Login_Message_board_Img_Left{
+	/* Posicao padrao das imagens: Esquerda */
+	float: left;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 3px;
+	margin: 0px;
+}
+
+/*===== FIM - PAINEL DE MENSAGENS - Mini-paineis de chamada =====*/
+
+/*===== INICIO - PAINEL DE LOCALIZAÇÃO DE EMPREGADOS - Mini-painel de chamada =====*/
+.contentPanel_Login_WebPesqLE{
+	float: right;
+	padding-top: 10px;
+	padding-bottom : 10px;
+	padding-left : 5px;
+	padding-right: 5px;
+	
+	margin-top: 5px;
+	margin-bottom : 10px;
+	margin-left : 10px;
+	margin-right: 10px;
+	
+	background-color: #F0F4F9;
+	border: 1px solid #b3cde1;
+	
+	vertical-align: top;	
+	width: 215px;
+	height:162px;
+	
+	color:#678fc0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	
+}
+.contentPanel_Login_WebPesqLE input{
+	padding: 0;
+	margin:0;
+    border: 1px solid #b3cde1;
+    background-image: url(/images/inputBGI.png);
+    height: 18px;
+    width: 86px;
+    color: #0057a5;
+    font-size: 12px;
+    vertical-align: bottom;
+}
+.tabsWebPesqlE{
+	height:21px;
+	width:218px;
+	background-image:url(/images/tabs_webpesq.gif); 
+	padding:0px; 
+	margin:0px 0px 7px 0px;
+}
+.contentPanel_Login_WebPesqLE_titulo{
+	/* Titulo do Painel WebPesqLE */
+	color: #0057a5;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+/*===== FIM - PAINEL DE LOCALIZAÇÃO DE EMPREGADOS - Mini-painel de chamada =====*/
+
+
+.contentPanel_Login_Alerta{
+	border: 1px solid #CC3300;
+	vertical-align: top;
+	padding: 4px;
+	width: 780px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-attachment: fixed;
+	background-image: url(/images/Fundo_Mensagem_Vermelho.gif);
+	background-repeat: repeat;
+}
+
+.contentPanel_Login_Alerta h2{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.contentPanel_Login_Alerta h3{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.contentPanel_Login_Alerta a {
+	cursor:pointer;
+}
+
+.contentPanel_Login_Alerta a:link {
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+.contentPanel_Login_Alerta a:visited{
+	color: #FFFF00;
+	text-decoration: none;
+}
+
+.contentPanel_Login_Alerta a:hover{
+	text-decoration: underline;
+}
+
+/* -------------- FIM - PAINEL DE MENSAGENS ------------------*/
+
+.contentPanel_Login_Big{
+	background-color: #FBFBFB;
+	border: 1px solid #CCCCCC;
+	vertical-align: top;
+	padding: 4px;
+	margin: 0px;
+}
+/* -------------- PAINEL 01 --------------------------------*/
+.contentPanel_01{
+	background-color: #F0F4F9;
+	border: 1px solid #93B6D9;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	vertical-align: top;
+	padding: 10px;
+	width: 368px;
+	float: left;
+}
+
+.contentPanel_01 h2{
+	/* Titulo do Painel 01 */
+	color: #678FC0;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+.contentPanel_01 h3{
+	/* Titulo das Subsecoes do Painel 01. Ex.: "Infomormatica" ou "Telecom" */
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #678FC0;
+	height: 22px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentPanel_01 h3:hover {
+	color: #678FC0;
+	background-color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.contentPanel_01 h2:hover {
+	color: #7BAB50;
+	text-decoration: underline;
+}
+
+/* -------------- PAINEL 02 --------------------------------*/
+
+.contentPanel_02{
+	background-color: #EFF8E4;
+	border: 1px solid #BEE292;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	vertical-align: top;
+	padding: 10px;
+	width: 368px;
+	float: right;
+}
+
+.contentPanel_02 h2{
+	/* Titulo do Painel 02 */
+	color: #7BAB50;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+.contentPanel_02 h3{
+	/* Titulo das Subsecoes do Painel 01. Ex.: "Infomormatica" ou "Telecom" */
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #7BAB50;
+	height: 22px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentPanel_02 h3:hover {
+	color: #7BAB50;
+	background-color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.contentPanel_02 h2:hover {
+	color: #678FC0;
+	text-decoration: underline;
+}
+
+/* -------------- PAINEL 03 --------------------------------*/
+
+.contentPanel_03{
+	background-color: #EAE7F5;
+	border: 1px solid #C2B9E1;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	vertical-align: top;
+	padding: 8px;
+	width: 368px;
+	float: left;
+}
+
+.contentPanel_03 h2{
+	/* Titulo do Painel 03 */
+	color: #9587CD;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+.contentPanel_03 h3{
+	/* Titulo das Subsecoes do Painel 01. Ex.: "Infomormatica" ou "Telecom" */
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #9587CD;
+	height: 22px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentPanel_03 h3:hover {
+	color: #9587CD;
+	background-color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.contentPanel_03 h2:hover {
+	color: #868686;
+	text-decoration: underline;
+}
+
+/* -------------- PAINEL 04 --------------------------------*/
+
+.contentPanel_04{
+	background-color: #FBFBFB;
+	border: 1px solid #CCCCCC;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	vertical-align: top;
+	padding: 10px;
+	width: 368px;
+	height: 1163px;
+	float: right;
+	overflow:auto;
+}
+
+.contentPanel_04 h2{
+	/* Titulo do Painel 04 */
+	color: #868686;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+
+.contentPanel_04 h3{
+	/* Titulo das Subsecoes do Painel 01. Ex.: "Infomormatica" ou "Telecom" */
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #868686;
+	height: 22px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentPanel_04 h3:hover {
+	color: #868686;
+	background-color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.contentPanel_04 h2:hover {
+	color: #9587CD;
+	text-decoration: underline;
+}
+
+
+
+
+/**************  PAINEIS DE CONTEUDO 'Paginas Internas' DO SITE  *****************/
+/* Painel Medio - COM MENU - Ocupa todo Conteudo em 01 Coluna - Para Conteudo Normal */
+.contentPanel_01_Middle{
+	background-color: #F0F4F9;
+	border: 1px solid #93B6D9;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	vertical-align: top;
+	padding: 10px;
+}
+
+.contentPanel_Msg_Middle{
+	background-color: #FFFFE1;
+	border: 1px solid #93B6D9;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	vertical-align: top;
+	padding: 10px;
+}
+
+.contentPanel_01_Middle h2{
+	/* Titulo do Painel 01 Medio */
+	color: #678FC0;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+.contentPanel_Msg_Middle h2{
+	/* Titulo do Painel 01 Medio */
+	color: #678FC0;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+.contentPanel_01_Middle h3{
+	/* Sub-Titulo do Painel 01 Medio */
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #E9EFF5;
+	height: 22px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentPanel_Msg_Middle h3{
+	/* Sub-Titulo do Painel 01 Medio */
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #FFFFF5;
+	height: 22px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+.contentPanel_01_Middle input{
+	font-size: 10px;
+	margin: 0px;
+	vertical-align: bottom;
+}
+
+.contentPanel_Msg_Middle input{
+	font-size: 10px;
+	margin: 0px;
+	vertical-align: bottom;
+}
+
+/* Painel Grande - SEM MENU - Ocupa todo Conteudo com 01 Coluna - Para Grades de Dados (Data Grids)*/
+.contentPanel_01_Big{
+	background-color: #F0F4F9;
+	border: 1px solid #93B6D9;
+	vertical-align: top;
+	padding: 10px;
+	margin: 0px;
+}
+
+.contentPanel_01_Big h2{
+	/* Titulo do Painel 01 Grande - SEM MENU */
+	color: #678FC0;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+.contentPanel_01_Big h3{
+	/* Sub-Titulo do Painel 01 Grande - SEM MENU */
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 95%;
+	font-weight: bold;
+	background-color: #E9EFF5;
+	height: 22px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+
+/************** .story (Sao as chamadas na INDEX de materias normais)  *****************/
+/* Contida em #content -> .contentPanel_XX */
+
+.story{
+	clear: both;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+.story h4{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	font-weight: bold;
+	color: #000000;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	margin-left: 0px;
+}
+
+.story p{
+	font-size: 80%;
+	text-indent: 0px;
+	text-align: justify;
+	padding: 0px; /* ----- */
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+.storyImg_Left{
+	/* Posicao padrao das imagens: Esquerda */
+	float: left;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.storyImg_Right{
+	/* Posicao Alternativa das imagens: Direita */
+	float: right;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.story_DateInclude{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	/*text-transform: uppercase;*/
+	font-size: 75%;
+	padding: 0px; /* ----- */
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	font-weight: bold;
+	color: #626262;
+}
+
+.story_DateInclude_01{
+	font-family: Arial, sans-serif, Helvetica, Verdana;
+	/*text-transform: uppercase;*/
+	font-size: 80%;
+	padding: 0px; /* ----- */
+	margin-top: 1px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	font-weight: bold;
+	float: right;
+	color: #678FC0;
+}
+
+.story_DateInclude_02{
+	font-family: Arial, sans-serif, Helvetica, Verdana;
+	/*text-transform: uppercase;*/
+	font-size: 80%;
+	padding: 0px; /* ----- */
+	margin-top: 1px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+	margin-left: 0px;
+	font-weight: bold;
+	float: right;
+	color: #7BAB50;
+}
+
+/************** .search (Classes de integridade de layout de FORMs)  *****************/
+/* Contida em #pageSearch */
+
+.search{
+	clear: both;
+	font-size: 80%;
+	text-align: left;	
+	padding-top: 25px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.search h2{
+	color: #868686;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+/* Contida em #pageSearch */
+/* Contida em #pagesuggestions */
+
+.searchTextarea{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #3D5E00;
+	background-color: #FAFFF0;
+	height: 14px;
+	border: 1px solid #7ABC00;
+	margin: 0px;
+	padding: 0px;
+}
+
+.searchTextfield{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #3D5E00;
+	background-color: #FAFFF0;
+	border: 1px solid #7ABC00;
+	margin: 0px;
+	padding: 0px;
+}
+
+/************** .suggestions (Sao as Sugestoes Enviadas por Usuarios)  *****************/
+/* Contida em #pagesuggestions */
+
+.suggestions{
+	clear: both;
+	font-size: 80%;
+	text-align: left;
+	padding: 6px;
+}
+
+.suggestions h2{
+	color: #868686;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+.suggestions h3{
+	font: bold 80% Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+
+.suggestions p{
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+
+.suggestions a{
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+/************** .tips (Sao as Dicas)  *****************/
+/* Contida em #pageTips */
+
+.tips{
+	clear: both;
+	font-size: 80%;
+	text-align: left;
+	padding: 6px;
+}
+
+.tips h2{
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	color: #6197C9;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+
+}
+
+.tips h3{
+	font: bold 80% Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+}
+
+.tips p{
+	color: #000000;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+
+.tips a{
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+}
+
+
+/************** .SubsectionList (Sao as LISTAS "ul" das Sub-Secoes do Site)  *****************/
+/* Contida em #content -> .contentPanel_XX */
+
+.SubsectionList {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	list-style-position: outside;
+	list-style-image: url(/images/Bullet_N_CEDAE_01.gif);
+	list-style-type: none;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 5px;
+	vertical-align: text-top;
+}
+
+
+
+.SubsectionList ul{
+	list-style-type: square;
+	padding-top: 3px;
+	margin-top: 3px;
+	vertical-align: text-top;
+}
+
+.SubsectionList li{
+	padding-bottom: 0px;
+	padding-top: 1px;
+	margin-bottom: 0px;
+	margin-top: 1px;
+	vertical-align: text-top;
+	width:600px;
+}
+
+.SubsectionList  ul ul{
+	list-style-type: disc;
+	padding-bottom: 0px;
+	padding-top: 9px;
+	margin-bottom: 0px;
+	margin-top: 9px;
+	vertical-align: text-top;
+}
+
+.SubsectionList ul li{
+	padding-bottom: 0px;
+	padding-top: 15px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	vertical-align: text-top;
+}
+
+.SubsectionList  ul ul ul{
+	list-style-type: none;
+	padding-bottom: 0px;
+	padding-top: 9px;
+	margin-bottom: 0px;
+	margin-top: 9px;
+	vertical-align: text-top;
+}
+
+.SubsectionList dt a{
+	vertical-align:super;
+	font-size : 11px;
+	font-weight: bolder;
+}
+
+.SubsectionList dd p{
+	color: #444	;
+	background-color: #F0F4F9;
+	font-weight: bolder;
+}
+.SubsectionList dd h3{
+	vertical-align:super;
+	color: #222;
+	background-color: #F0F4F9;
+	font-size : 12px;
+	font-weight: bolder;
+}
+
+.SubsectionList dd a{
+    font-size : 12px;
+}
+
+.div_tel_suporte{
+	width: 760px;
+	float:left;
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-weight: bold;
+	font-size: 75%;
+	color: #4d5229;
+}
+.table_tel_suporte{
+   width:100%;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 90%;
+}
+.tab_tdLeft_tel_suporte{
+  font-size : 24px;
+  font-weight: bold;
+  width: 45%;
+  height: 40px;
+  vertical-align: top;  
+}
+
+.telSuporte{
+  font-size : 16px;	
+  margin : 5px;
+  
+}
+
+.tab_tdRight_tel_suporte{  
+  vertical-align: top;
+}
+
+.busca_CEP{
+
+	border: 0px ;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	vertical-align: top;
+	padding: 0px;
+	width: 390px;
+	float: left;
+}
