@@ -35,6 +35,20 @@
         $string = "\"".$string."\"";
         
         return $string;
-    }    
+    }
+    function padronizanome($nome){
+        $arraynome = explode(" ",$nome);
+        if (sizeof($arraynome) === 1){
+            $nome = $nome." CEDAE";
+        }
+
+        return $nome;
+    }
+    function split_name($name) {
+        $arrname = list($first_name, $last_name) = explode(' ', $name, 2);
+        $last_name = $arrname[1];
+        $first_name = $arrname[0];
+        return array($first_name, $last_name);
+    }
 
 ?>

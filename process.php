@@ -10,24 +10,29 @@
     }
 
  
-    $nome=$_POST['nome'];
+    $nomecompleto=$_POST['nome'];
     $usuario=$_POST['usuario'];
     $email=$_POST['email'];
     $manager=$_POST['manager'];
 
-    if ( empty( $nome ) ) {
-        $nome = doublequotes($usuario);
+    if ( empty( $nomecompleto ) ) {
+        $nomecompleto = $usuario;
     }
     if ( empty($email) ) {
-        $email = doublequotes($usuario."@cedae.com.br");
+        $email = $usuario."@cedae.com.br";
     }
 
-    $nome = doublequotes($nome);
+    $nomecompleto = padronizanome($nomecompleto);
+    $arrnomecompleto = split_name($nomecompleto);
+
+    $nomecompleto = doublequotes($nomecompleto);
     $usuario = doublequotes($usuario);
     $email = doublequotes($email);
     $manager = doublequotes($manager);
+    $nome = doublequotes($arrnomecompleto[0]);
+    $sobrenome = doublequotes($arrnomecompleto[1]);
 
-    $comando =  escapeshellcmd('python scripts/app.py '.$nome.' '.$usuario.' '.$email.' '.$manager);
+    $comando =  escapeshellcmd('python scripts/app.py '.$nomecompleto.' '.$usuario.' '.$email.' '.$manager.' '.$nome.' '.$sobrenome);
     $output = shell_exec($comando);
-    header('Location: form.php');
+    echo "<script>alert('Processo concluido, verifique se a conta ".$email." foi criada corretamente');top.location.href='form.php';</script>";
 ?>
