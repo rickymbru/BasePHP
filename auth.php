@@ -5,7 +5,7 @@
     
     if(session_status()!=PHP_SESSION_ACTIVE) session_start();
     
-    $host = $_SERVER['HTTP_HOST']; 
+    $host = explode('.',$_SERVER['HTTP_HOST'])[0];  
     If($host == SERVER){
 		$user=USER;
 	}Else{
@@ -14,7 +14,7 @@
     
     $_SESSION['user'] = $user; 
 
-    $db = new \Oracle\Db("Verifica Chefia","infra");
+    $db = new \Oracle\Db("Institucional","infra");
     $sql ="select LOTACAO,CARGOCONF from infra.view_ad_sisrhu where samaccountname = "."'".$user."'";
     $res = $db->execFetchArray($sql, "Consulta");
     

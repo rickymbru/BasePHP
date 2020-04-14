@@ -1,5 +1,6 @@
 <?PHP
     require('database/ac_db.inc.php');
+    include('env.php');
 
      function cabecalho() {
         $ano = date('Y');
@@ -68,9 +69,15 @@
         return $res["MAIL"];
     }
     function enviaEmail($email,$manager){
-
         $mailgestor = retornaMailGestor($manager);
-        $destinatario  = "infra@cedae.com.br,".$mailgestor;
+
+        $host = explode('.',$_SERVER['HTTP_HOST'])[0]; 
+        If($host == SERVER){
+            $destinatario  = "ricky@cedae.com.br";
+        }Else{
+            $destinatario  = "infra@cedae.com.br,".$mailgestor;
+        }        
+        
         $assunto = "E-mail institucional criado - ".$email;
         $password = "cedae#4455";
         $corpo = '	

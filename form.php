@@ -38,7 +38,7 @@
 				<p>
                 <title>Infraestrutura</title>
                 <form id="form" name="form" action="process.php" method="post">
-                    <table id="esmaecer1" style="font-size: 0.8em; padding-left: 15px; background-image: url(/images/fundo_form_NovoMail.jpg);" width="100%" 
+                    <table id="esmaecer1" style="font-size: 0.8em; padding-left: 15px; background-image: url(images/fundo_form_NovoMail.jpg);" width="100%" 
                         border="0" cellpadding="0" cellspacing="0">
                         <tr>
                                 <td colspan="2"><br>
